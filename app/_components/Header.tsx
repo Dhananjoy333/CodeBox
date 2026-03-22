@@ -92,17 +92,17 @@ function Header() {
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuLink>
+              <NavigationMenuLink asChild>
                 <Link href={'/projects'}>Projects</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuLink>
+              <NavigationMenuLink asChild>
                 <Link href={'/pricing'}>Pricing</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuLink>
+              <NavigationMenuLink asChild>
                 <Link href={'/contact-us'}>Contact Us</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
