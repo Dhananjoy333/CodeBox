@@ -7,3 +7,13 @@ export const usersTable = pgTable("users", {
   points: integer().default(0),
   subscription: varchar()
 });
+
+export const CourseTable= pgTable("courses",{
+  id: integer().primaryKey().generatedAlwaysAsIdentity(),
+  courseId: integer().notNull().unique(),
+  title: varchar().notNull(),
+  des: varchar().notNull(),
+  bannerImage: varchar().notNull(),
+  level: varchar().default('Beginner'),
+  tags: varchar()
+}) 

@@ -77,8 +77,10 @@ function Header() {
   return (
     <div className="p-4 max-w-7xl flex justify-between items-center w-full">
         <div className="flex gap-2 items-center">
+          <Link href={'/'}>
             <Image src={'/logo.png'} alt="logo" width={40} height={40}/>
             <h2 className="font-bold text-3xl font-game">CodeBox</h2>
+          </Link>
         </div>
         {/* Navbar */}
         <NavigationMenu>
@@ -121,7 +123,9 @@ function Header() {
         </Link>
         : 
         <div className="flex gap-4 items-center">
+            <Link href={'/dashboard'}>
             <Button className="font-game text-2xl" variant={"pixel"}>Dashboard</Button>
+            </Link>
             <UserButton/>
         </div>
         }
