@@ -77,7 +77,7 @@ function Header() {
   return (
     <div className="p-4 max-w-7xl flex justify-between items-center w-full">
         <div className="flex gap-2 items-center">
-          <Link href={'/'}>
+          <Link href={'/'} className="flex gap-2 items-center">
             <Image src={'/logo.png'} alt="logo" width={40} height={40}/>
             <h2 className="font-bold text-3xl font-game">CodeBox</h2>
           </Link>
