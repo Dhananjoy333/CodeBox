@@ -6,158 +6,158 @@ const DATA =
 [
   {
     "id": 1,
-    "name": "Introduction to HTML",
-    "desc": "Discover the foundation of every webpage and learn how HTML shapes the digital world.",
+    "name": "Introduction to React",
+    "desc": "Understand what React is, why it's used, and how it powers modern web apps.",
     "exercises": [
-      {"name": "Explore the Web Skeleton", "slug": "explore-the-web-skeleton", "xp": 20, "difficulty": "easy"},
-      {"name": "Build Your Base Camp", "slug": "build-your-base-camp", "xp": 25, "difficulty": "easy"},
-      {"name": "Name Your World", "slug": "name-your-world", "xp": 15, "difficulty": "easy"},
-      {"name": "Break & Repair", "slug": "break-and-repair", "xp": 20, "difficulty": "easy"},
-      {"name": "HTML Detective", "slug": "html-detective", "xp": 20, "difficulty": "easy"},
-      {"name": "Element Collector", "slug": "element-collector", "xp": 25, "difficulty": "easy"}
+      {"name": "What is React?", "slug": "what-is-react", "xp": 20, "difficulty": "easy"},
+      {"name": "Setup React App", "slug": "setup-react-app", "xp": 25, "difficulty": "easy"},
+      {"name": "Explore Project Structure", "slug": "explore-project-structure", "xp": 15, "difficulty": "easy"},
+      {"name": "First React Render", "slug": "first-react-render", "xp": 20, "difficulty": "easy"},
+      {"name": "JSX Preview", "slug": "jsx-preview", "xp": 20, "difficulty": "easy"},
+      {"name": "React DevTools Intro", "slug": "react-devtools-intro", "xp": 25, "difficulty": "easy"}
     ]
   },
   {
     "id": 2,
-    "name": "HTML Boilerplate",
-    "desc": "Understand the core structure that every HTML document begins with.",
+    "name": "JSX Basics",
+    "desc": "Learn how JSX allows you to write HTML-like syntax inside JavaScript.",
     "exercises": [
-      {"name": "Build the Core Structure", "slug": "build-the-core-structure", "xp": 35, "difficulty": "medium"},
-      {"name": "Fix the Broken Blueprint", "slug": "fix-the-broken-blueprint", "xp": 30, "difficulty": "easy"},
-      {"name": "Boost Meta Power", "slug": "boost-meta-power", "xp": 20, "difficulty": "easy"},
-      {"name": "Add Language Identity", "slug": "add-language-identity", "xp": 10, "difficulty": "easy"},
-      {"name": "Viewport Setup", "slug": "viewport-setup", "xp": 20, "difficulty": "easy"},
-      {"name": "Author Credit", "slug": "author-credit", "xp": 15, "difficulty": "easy"}
+      {"name": "Write Your First JSX", "slug": "write-first-jsx", "xp": 35, "difficulty": "medium"},
+      {"name": "JSX Rules Fix", "slug": "jsx-rules-fix", "xp": 30, "difficulty": "easy"},
+      {"name": "Embed Expressions", "slug": "embed-expressions", "xp": 20, "difficulty": "easy"},
+      {"name": "Class vs className", "slug": "class-vs-classname", "xp": 10, "difficulty": "easy"},
+      {"name": "JSX Fragment Use", "slug": "jsx-fragment-use", "xp": 20, "difficulty": "easy"},
+      {"name": "JSX Challenge", "slug": "jsx-challenge", "xp": 15, "difficulty": "easy"}
     ]
   },
   {
     "id": 3,
-    "name": "Head & Body Tags",
-    "desc": "Learn the difference between behind-the-scenes metadata and visible page content.",
+    "name": "Components",
+    "desc": "Break UI into reusable pieces using functional components.",
     "exercises": [
-      {"name": "Mind vs Body", "slug": "mind-vs-body", "xp": 20, "difficulty": "easy"},
-      {"name": "Activate Styles", "slug": "activate-styles", "xp": 30, "difficulty": "medium"},
-      {"name": "Display Your Content", "slug": "display-your-content", "xp": 15, "difficulty": "easy"},
-      {"name": "Add External Script", "slug": "add-external-script", "xp": 20, "difficulty": "easy"},
-      {"name": "Meta Collection", "slug": "meta-collection", "xp": 25, "difficulty": "easy"},
-      {"name": "Body Structure Challenge", "slug": "body-structure-challenge", "xp": 25, "difficulty": "easy"}
+      {"name": "Create First Component", "slug": "create-first-component", "xp": 20, "difficulty": "easy"},
+      {"name": "Component Reuse", "slug": "component-reuse", "xp": 30, "difficulty": "medium"},
+      {"name": "Nested Components", "slug": "nested-components", "xp": 15, "difficulty": "easy"},
+      {"name": "Component Naming", "slug": "component-naming", "xp": 20, "difficulty": "easy"},
+      {"name": "Split UI into Components", "slug": "split-ui-components", "xp": 25, "difficulty": "easy"},
+      {"name": "Mini Project UI", "slug": "mini-project-ui", "xp": 25, "difficulty": "easy"}
     ]
   },
   {
     "id": 4,
-    "name": "Text Formatting",
-    "desc": "Format your content with headings, paragraphs, bold, italic, and more.",
+    "name": "Props",
+    "desc": "Pass data between components using props.",
     "exercises": [
-      {"name": "Create the Text Realm", "slug": "create-the-text-realm", "xp": 30, "difficulty": "easy"},
-      {"name": "Power Words", "slug": "power-words", "xp": 20, "difficulty": "easy"},
-      {"name": "Build a Story Block", "slug": "build-a-story-block", "xp": 30, "difficulty": "medium"},
-      {"name": "Line Break Mastery", "slug": "line-break-mastery", "xp": 15, "difficulty": "easy"},
-      {"name": "Quote Chamber", "slug": "quote-chamber", "xp": 25, "difficulty": "easy"},
-      {"name": "Code Snippet Display", "slug": "code-snippet-display", "xp": 30, "difficulty": "medium"}
+      {"name": "Pass Your First Props", "slug": "pass-first-props", "xp": 30, "difficulty": "easy"},
+      {"name": "Dynamic Props", "slug": "dynamic-props", "xp": 20, "difficulty": "easy"},
+      {"name": "Props Destructuring", "slug": "props-destructuring", "xp": 30, "difficulty": "medium"},
+      {"name": "Default Props", "slug": "default-props", "xp": 15, "difficulty": "easy"},
+      {"name": "Props Validation Idea", "slug": "props-validation-idea", "xp": 25, "difficulty": "easy"},
+      {"name": "Component Customization", "slug": "component-customization", "xp": 30, "difficulty": "medium"}
     ]
   },
   {
     "id": 5,
-    "name": "Links & Navigation",
-    "desc": "Create portals between pages and build simple navigation.",
+    "name": "State",
+    "desc": "Manage dynamic data inside components using useState.",
     "exercises": [
-      {"name": "Create a Warp Gate", "slug": "create-a-warp-gate", "xp": 20, "difficulty": "easy"},
-      {"name": "Open a New Dimension", "slug": "open-a-new-dimension", "xp": 25, "difficulty": "easy"},
-      {"name": "Navigation Builder", "slug": "navigation-builder", "xp": 40, "difficulty": "medium"},
-      {"name": "Anchor Teleport", "slug": "anchor-teleport", "xp": 20, "difficulty": "easy"},
-      {"name": "Email Portal", "slug": "email-portal", "xp": 20, "difficulty": "easy"},
-      {"name": "Button Link Trick", "slug": "button-link-trick", "xp": 25, "difficulty": "medium"}
+      {"name": "Intro to useState", "slug": "intro-usestate", "xp": 20, "difficulty": "easy"},
+      {"name": "Counter App", "slug": "counter-app", "xp": 25, "difficulty": "easy"},
+      {"name": "Toggle State", "slug": "toggle-state", "xp": 40, "difficulty": "medium"},
+      {"name": "Form Input State", "slug": "form-input-state", "xp": 20, "difficulty": "easy"},
+      {"name": "Multiple States", "slug": "multiple-states", "xp": 20, "difficulty": "easy"},
+      {"name": "State Challenge", "slug": "state-challenge", "xp": 25, "difficulty": "medium"}
     ]
   },
   {
     "id": 6,
-    "name": "Images",
-    "desc": "Display images, control sizing, and optimize accessibility.",
+    "name": "Event Handling",
+    "desc": "Handle user interactions like clicks, inputs, and submissions.",
     "exercises": [
-      {"name": "Summon an Image", "slug": "summon-an-image", "xp": 20, "difficulty": "easy"},
-      {"name": "Vision for All", "slug": "vision-for-all", "xp": 15, "difficulty": "easy"},
-      {"name": "Image Grid Challenge", "slug": "image-grid-challenge", "xp": 35, "difficulty": "medium"},
-      {"name": "Resize Hero", "slug": "resize-hero", "xp": 20, "difficulty": "easy"},
-      {"name": "Caption Creator", "slug": "caption-creator", "xp": 25, "difficulty": "medium"},
-      {"name": "Broken Image Test", "slug": "broken-image-test", "xp": 15, "difficulty": "easy"}
+      {"name": "Handle Click Event", "slug": "handle-click-event", "xp": 20, "difficulty": "easy"},
+      {"name": "Input Change Event", "slug": "input-change-event", "xp": 15, "difficulty": "easy"},
+      {"name": "Form Submit", "slug": "form-submit", "xp": 35, "difficulty": "medium"},
+      {"name": "Prevent Default", "slug": "prevent-default", "xp": 20, "difficulty": "easy"},
+      {"name": "Pass Arguments", "slug": "pass-arguments", "xp": 25, "difficulty": "medium"},
+      {"name": "Event Practice", "slug": "event-practice", "xp": 15, "difficulty": "easy"}
     ]
   },
   {
     "id": 7,
-    "name": "Lists",
-    "desc": "Structure grouped information using ordered, unordered, and description lists.",
+    "name": "Conditional Rendering",
+    "desc": "Render UI based on conditions using JS logic.",
     "exercises": [
-      {"name": "Bullet Creator", "slug": "bullet-creator", "xp": 20, "difficulty": "easy"},
-      {"name": "Number Builder", "slug": "number-builder", "xp": 20, "difficulty": "easy"},
-      {"name": "Nested List Challenge", "slug": "nested-list-challenge", "xp": 35, "difficulty": "medium"},
-      {"name": "Description Vault", "slug": "description-vault", "xp": 25, "difficulty": "easy"},
-      {"name": "Task Checklist", "slug": "task-checklist", "xp": 20, "difficulty": "easy"},
-      {"name": "Navigation with Lists", "slug": "navigation-with-lists", "xp": 35, "difficulty": "medium"}
+      {"name": "if-else Rendering", "slug": "if-else-rendering", "xp": 20, "difficulty": "easy"},
+      {"name": "Ternary Operator UI", "slug": "ternary-ui", "xp": 20, "difficulty": "easy"},
+      {"name": "&& Rendering Trick", "slug": "and-rendering", "xp": 35, "difficulty": "medium"},
+      {"name": "Login/Logout UI", "slug": "login-logout-ui", "xp": 25, "difficulty": "easy"},
+      {"name": "Conditional Component", "slug": "conditional-component", "xp": 20, "difficulty": "easy"},
+      {"name": "Challenge UI Switch", "slug": "challenge-ui-switch", "xp": 35, "difficulty": "medium"}
     ]
   },
   {
     "id": 8,
-    "name": "Tables",
-    "desc": "Represent information in structured grid format.",
+    "name": "Lists & Keys",
+    "desc": "Render lists dynamically using map and unique keys.",
     "exercises": [
-      {"name": "Table Blueprint", "slug": "table-blueprint", "xp": 30, "difficulty": "medium"},
-      {"name": "Add Column Headers", "slug": "add-column-headers", "xp": 20, "difficulty": "easy"},
-      {"name": "Merge the Cells", "slug": "merge-the-cells", "xp": 35, "difficulty": "medium"},
-      {"name": "Student Report Table", "slug": "student-report-table", "xp": 25, "difficulty": "easy"},
-      {"name": "Border Styling", "slug": "border-styling", "xp": 20, "difficulty": "easy"},
-      {"name": "Header Footer Rows", "slug": "header-footer-rows", "xp": 30, "difficulty": "medium"}
+      {"name": "Map Function Basics", "slug": "map-function-basics", "xp": 30, "difficulty": "medium"},
+      {"name": "Render List UI", "slug": "render-list-ui", "xp": 20, "difficulty": "easy"},
+      {"name": "Add Keys", "slug": "add-keys", "xp": 35, "difficulty": "medium"},
+      {"name": "Dynamic List", "slug": "dynamic-list", "xp": 25, "difficulty": "easy"},
+      {"name": "List Filtering", "slug": "list-filtering", "xp": 20, "difficulty": "easy"},
+      {"name": "List Challenge", "slug": "list-challenge", "xp": 30, "difficulty": "medium"}
     ]
   },
   {
     "id": 9,
-    "name": "Forms Basics",
-    "desc": "Collect user input using form controls like input, labels, and buttons.",
+    "name": "Forms in React",
+    "desc": "Handle controlled inputs and form state.",
     "exercises": [
-      {"name": "Create a Login Portal", "slug": "create-a-login-portal", "xp": 40, "difficulty": "medium"},
-      {"name": "Design a Contact Form", "slug": "design-a-contact-form", "xp": 45, "difficulty": "medium"},
-      {"name": "Placeholder Magic", "slug": "placeholder-magic", "xp": 15, "difficulty": "easy"},
-      {"name": "Label Linker", "slug": "label-linker", "xp": 20, "difficulty": "easy"},
-      {"name": "Choose Wisely", "slug": "choose-wisely", "xp": 25, "difficulty": "easy"},
-      {"name": "Dropdown Selector", "slug": "dropdown-selector", "xp": 30, "difficulty": "medium"}
+      {"name": "Controlled Input", "slug": "controlled-input", "xp": 40, "difficulty": "medium"},
+      {"name": "Multiple Inputs", "slug": "multiple-inputs", "xp": 45, "difficulty": "medium"},
+      {"name": "Checkbox Handling", "slug": "checkbox-handling", "xp": 15, "difficulty": "easy"},
+      {"name": "Radio Buttons", "slug": "radio-buttons", "xp": 20, "difficulty": "easy"},
+      {"name": "Form Validation", "slug": "form-validation", "xp": 25, "difficulty": "easy"},
+      {"name": "Form Project", "slug": "form-project", "xp": 30, "difficulty": "medium"}
     ]
   },
   {
     "id": 10,
-    "name": "Semantic HTML",
-    "desc": "Use meaningful HTML elements to improve page structure and accessibility.",
+    "name": "useEffect Hook",
+    "desc": "Handle side effects like API calls and lifecycle events.",
     "exercises": [
-      {"name": "Build the Layout", "slug": "build-the-layout", "xp": 35, "difficulty": "medium"},
-      {"name": "Blog Structure", "slug": "blog-structure", "xp": 40, "difficulty": "medium"},
-      {"name": "Sidebar Creator", "slug": "sidebar-creator", "xp": 25, "difficulty": "easy"},
-      {"name": "Navigation Map", "slug": "navigation-map", "xp": 35, "difficulty": "medium"},
-      {"name": "Figure & Caption", "slug": "figure-and-caption", "xp": 25, "difficulty": "easy"},
-      {"name": "Semantic Rebuild", "slug": "semantic-rebuild", "xp": 40, "difficulty": "medium"}
+      {"name": "Intro to useEffect", "slug": "intro-useeffect", "xp": 35, "difficulty": "medium"},
+      {"name": "Run on Mount", "slug": "run-on-mount", "xp": 40, "difficulty": "medium"},
+      {"name": "Dependency Array", "slug": "dependency-array", "xp": 25, "difficulty": "easy"},
+      {"name": "Fetch API Data", "slug": "fetch-api-data", "xp": 35, "difficulty": "medium"},
+      {"name": "Cleanup Function", "slug": "cleanup-function", "xp": 25, "difficulty": "easy"},
+      {"name": "Effect Challenge", "slug": "effect-challenge", "xp": 40, "difficulty": "medium"}
     ]
   },
   {
     "id": 11,
-    "name": "Audio & Video",
-    "desc": "Add multimedia components for richer experiences.",
+    "name": "Styling in React",
+    "desc": "Style components using CSS, inline styles, and libraries.",
     "exercises": [
-      {"name": "Play the Sound", "slug": "play-the-sound", "xp": 25, "difficulty": "easy"},
-      {"name": "Video Portal", "slug": "video-portal", "xp": 30, "difficulty": "medium"},
-      {"name": "Autoplay Test", "slug": "autoplay-test", "xp": 20, "difficulty": "easy"},
-      {"name": "Add Subtitles", "slug": "add-subtitles", "xp": 40, "difficulty": "medium"},
-      {"name": "Audio Playlist", "slug": "audio-playlist", "xp": 20, "difficulty": "easy"},
-      {"name": "Thumbnail Setup", "slug": "thumbnail-setup", "xp": 25, "difficulty": "easy"}
+      {"name": "CSS Import", "slug": "css-import", "xp": 25, "difficulty": "easy"},
+      {"name": "Inline Styling", "slug": "inline-styling", "xp": 30, "difficulty": "medium"},
+      {"name": "Conditional Styles", "slug": "conditional-styles", "xp": 20, "difficulty": "easy"},
+      {"name": "CSS Modules", "slug": "css-modules", "xp": 40, "difficulty": "medium"},
+      {"name": "Tailwind Setup", "slug": "tailwind-setup", "xp": 20, "difficulty": "easy"},
+      {"name": "Styled UI Challenge", "slug": "styled-ui-challenge", "xp": 25, "difficulty": "easy"}
     ]
   },
   {
     "id": 12,
-    "name": "HTML Best Practices",
-    "desc": "Write clear, clean, and accessible HTML optimized for real-world use.",
+    "name": "React Best Practices",
+    "desc": "Write clean, scalable, and maintainable React code.",
     "exercises": [
-      {"name": "Code Cleanup", "slug": "code-cleanup", "xp": 20, "difficulty": "easy"},
-      {"name": "Accessibility Upgrade", "slug": "accessibility-upgrade", "xp": 35, "difficulty": "medium"},
-      {"name": "Alt Text Review", "slug": "alt-text-review", "xp": 20, "difficulty": "easy"},
-      {"name": "Heading Order Fix", "slug": "heading-order-fix", "xp": 25, "difficulty": "easy"},
-      {"name": "Link Check", "slug": "link-check", "xp": 20, "difficulty": "easy"},
-      {"name": "Semantic Improvement", "slug": "semantic-improvement", "xp": 40, "difficulty": "medium"}
+      {"name": "Folder Structure", "slug": "folder-structure", "xp": 20, "difficulty": "easy"},
+      {"name": "Component Reusability", "slug": "component-reusability", "xp": 35, "difficulty": "medium"},
+      {"name": "Avoid Props Drilling", "slug": "avoid-props-drilling", "xp": 20, "difficulty": "easy"},
+      {"name": "Custom Hooks Intro", "slug": "custom-hooks-intro", "xp": 25, "difficulty": "easy"},
+      {"name": "Performance Basics", "slug": "performance-basics", "xp": 20, "difficulty": "easy"},
+      {"name": "Final Mini Project", "slug": "final-mini-project", "xp": 40, "difficulty": "medium"}
     ]
   }
 ]
@@ -166,7 +166,7 @@ const DATA =
 export async function GET(req: NextRequest) {
     DATA.forEach(async (item) => {
         await db.insert(CourseChaptersTable).values({
-            courseId: 2, //Change Course ID depends on course info,
+            courseId: 1, //Change Course ID depends on course info,
             desc: item?.desc,
             exercises: item.exercises,
             name: item?.name,

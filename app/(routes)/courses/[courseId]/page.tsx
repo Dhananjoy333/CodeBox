@@ -32,7 +32,7 @@ function CourseDetail() {
 
   return (
     <div>
-        <CourseDetailBanner loading={loading} courseDetail={couseDetail}/>
+        <CourseDetailBanner loading={loading} courseDetail={couseDetail} refreshData={()=>GetCourseDetail()}/>
         <div className='grid grid-cols-3 gap-7 p-10 md:px-24 lg:px-36'>
           <div className='col-span-2'>
             <CourseChapter loading={loading} courseDetail={couseDetail}/>
