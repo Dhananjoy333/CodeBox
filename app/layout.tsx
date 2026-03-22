@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Pixelify_Sans, Inter, Jersey_10 } from "next/font/go
 import "./globals.css";
 import Provider from "./Provider";
 import { ClerkProvider } from '@clerk/nextjs'
+import { TooltipProvider } from "@/components/ui/tooltip"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -50,7 +51,9 @@ export default function RootLayout({
               enableSystem
               disableTransitionOnChange
             >
+              <TooltipProvider>
               {children}
+              </TooltipProvider>
             </Provider>
         </body>
       </html>
