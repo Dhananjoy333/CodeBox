@@ -1,5 +1,7 @@
 import { Button } from '@/components/ui/button'
+import { Linden_Hill } from 'next/font/google'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 function Hero() {
@@ -13,7 +15,9 @@ function Hero() {
           textShadow: '2px 2px 0 #000, -2px -2px 0  #000, 2px -2px 0 #000, -2px 2px 0 #000'
         }}>Coding Adventure</h2>
         <h2 className='mt-5 font-game text-3xl'>Beginner Friendly coding courses and projects</h2>
-        <Button className='font-game text-3xl p-6 mt-7' variant={'pixel'}> GET STARTED</Button>
+        <Link href={'/sign-in'}>
+          <Button className='font-game text-3xl p-6 mt-7 cursor-pointer' variant={'pixel'}> GET STARTED</Button>
+        </Link>
       </div>
     </div>
   )
