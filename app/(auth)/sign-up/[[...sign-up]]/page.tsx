@@ -72,11 +72,11 @@ export default function SignUpPage() {
             {!pendingVerification ? (
                 <div className="mx-auto w-full sm:w-96 space-y-6 bg-zinc-800 px-4 py-8 border-4 border-black shadow-[8px_8px_0_0_#000]">
                     <header className="text-center flex flex-col items-center">
-                                        <Image src={'/logo.png'} alt="logo" width={40} height={40}/>
-                                        <h1 className="mt-3 text-base font-bold tracking-wide text-white uppercase font-game">
-                                            Create Account
-                                        </h1>
-                                    </header>
+                        <Image src={'/logo.png'} alt="logo" width={40} height={40}/>
+                        <h1 className="mt-3 text-base font-bold tracking-wide text-white uppercase font-game">
+                            Create Account
+                        </h1>
+                    </header>
 
                     {error && <p className="text-xs text-red-500 font-bold uppercase border-2 border-red-500 p-2">{error}</p>}
 
