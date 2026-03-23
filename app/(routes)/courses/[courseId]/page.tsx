@@ -9,10 +9,6 @@ import CourseStatus from './_components/CourseStatus'
 import UpgradeToPro from '../../dashboard/_components/UpgradeToPro'
 import CommunityHelpSection from './_components/CommunityHelpSection'
 
-type courseDetail = {
-
-}
-
 function CourseDetail() {
     const {courseId} = useParams()
     const [couseDetail, setCourseDetail] = useState<Course>()

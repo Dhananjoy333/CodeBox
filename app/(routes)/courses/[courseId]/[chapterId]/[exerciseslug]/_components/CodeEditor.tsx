@@ -54,8 +54,10 @@ function CodeEditor({courseExerciseData,loading}:Props) {
     }
 
   return (
-    <div>
-        <SandpackProvider template="static" 
+    <div className="h-full"> 
+        <SandpackProvider
+        //@ts-ignore
+        template={courseExerciseData?.editorType??'react'}
         theme={nightOwl}
         style={{height:'100vh'}}
         files = {courseExerciseData?.exerciseData?.exercisesContent?.starterCode}
