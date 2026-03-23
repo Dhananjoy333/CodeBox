@@ -15,7 +15,8 @@ export type Course={
     tag:string,
     chapters?:Chapter[],
     userEnrolled?:boolean,
-    courseEnrolledInfo?:CourseEnrolledInfo
+    courseEnrolledInfo?:CourseEnrolledInfo,
+    completedExercises?:CompletedExercises[]
 }
 
 type CourseEnrolledInfo = {
@@ -24,7 +25,7 @@ type CourseEnrolledInfo = {
 }
 
 type Chapter={
-    chaperId: number,
+    chapterId: number,
     courseId: number,
     desc: string,
     name: string,
@@ -37,6 +38,12 @@ type exercise={
     slug: string,
     xp: number,
     difficulty: string
+}
+
+type CompletedExercises = {
+    chapterId: number,
+    courseId: number,
+    exerciseId: number
 }
 
 function CourseList() {
