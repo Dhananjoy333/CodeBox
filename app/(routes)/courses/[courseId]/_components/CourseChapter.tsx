@@ -80,14 +80,15 @@ function CourseChapter({loading,courseDetail}:Props) {
                         <h2 className='text-3xl'>{exc?.name}</h2>
                       </div> 
 
-                      {EnableExercise(index,indexExc,chapter?.exercises?.length) ?
+                       
+                      {isExerciseCompleted(chapter?.chapterId, indexExc + 1) ?
+                      <Button variant={'pixel'} className='font-game bg-green-600' size={'lg'}>Completed</Button> 
+                       :
+                       courseDetail?.userEnrolled?
                       <Link href={'/courses/'+ courseDetail?.courseId+ '/'+ chapter?.chapterId+ '/' + exc?.slug}>
                         <Button variant={'pixel'} className='font-game' size={'lg'}>{exc?.xp} xp</Button> 
                       </Link>
-                      : 
-                      isExerciseCompleted(chapter?.chapterId, indexExc + 1) ?
-                      <Button variant={'pixel'} className='font-game bg-green-600' size={'lg'}>Completed</Button> 
-                      :              
+                      :             
                       <Tooltip>
                         <TooltipTrigger asChild>
                           <Button variant={'pixelDisabled'} className='font-game' size={'lg'}>???</Button>
