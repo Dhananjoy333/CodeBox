@@ -12,6 +12,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+import Link from 'next/link'
 
 type Props={
   loading:boolean,
@@ -80,7 +81,9 @@ function CourseChapter({loading,courseDetail}:Props) {
                       </div> 
 
                       {EnableExercise(index,indexExc,chapter?.exercises?.length) ?
-                      <Button variant={'pixel'} className='font-game' size={'lg'}>{exc?.xp} xp</Button> 
+                      <Link href={'/courses/'+ courseDetail?.courseId+ '/'+ chapter?.chapterId+ '/' + exc?.slug}>
+                        <Button variant={'pixel'} className='font-game' size={'lg'}>{exc?.xp} xp</Button> 
+                      </Link>
                       : 
                       isExerciseCompleted(chapter?.chapterId, indexExc + 1) ?
                       <Button variant={'pixel'} className='font-game bg-green-600' size={'lg'}>Completed</Button> 
