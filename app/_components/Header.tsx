@@ -12,41 +12,26 @@ import {
 import Link from "next/link"
 import { UserButton, useUser } from "@clerk/nextjs";
 import { useParams, usePathname } from "next/navigation"
-
-const courses = [
-  {
-    id: 1,
-    name: 'HTML',
-    desc: 'Learn the fundamentals of HTML and build the structure of modern web pages.',
-    path: '/courses/2'
-  },
-  {
-    id: 2,
-    name: 'CSS',
-    desc: 'Master CSS to style and design responsive, visually appealing web layouts.',
-    path: '/courses/3'
-  },
-  {
-    id: 3,
-    name: 'React',
-    desc: 'Build dynamic and interactive web applications using the React JavaScript library.',
-    path: '/courses/1'
-  },
-  {
-    id: 5,
-    name: 'Python',
-    desc: 'Learn Python programming from basics to intermediate level, covering logic building, functions, and real-world applications.',
-    path: '/courses/4'
-  },
-];
+import axios from "axios"
+import { useEffect, useState } from "react"
+import { Course } from "../(routes)/courses/_components/CourseList"
 
 
 function Header() {
 
   const {user} = useUser()
 
-  const path = usePathname()
   const {exerciseslug} = useParams()
+  const [courses,setCourses] = useState<Course[]>()
+
+  useEffect(()=>{
+    GetCourses()
+  },[])
+
+  const GetCourses= async()=>{
+    const result = await axios.get('/api/course')
+    setCourses(result.data)
+  }
 
   return (
     <div className="p-4 max-w-7xl flex justify-between items-center w-full">
@@ -57,7 +42,7 @@ function Header() {
           </Link>
         </div>
         {/* Navbar */}
-        {!exerciseslug ?
+        {!exerciseslug && courses ?
         <NavigationMenu className="font-game">
           <NavigationMenuList className="gap-8">
             <NavigationMenuItem>
@@ -65,10 +50,10 @@ function Header() {
               <NavigationMenuContent>
                 <ul className="grid md:grid-cols-2 gap-2 sm:w-100 md:w-120 lg:w-150">
                   {courses.map((course,index)=>(
-                    <Link href={course.path} key={index} >
+                    <Link href={'/courses/'+course?.courseId} key={index} >
                     <div className="p-2 hover:bg-accent rounded-xl cursor-pointer">
-                      <h2 className="font-medium text-2xl">{course.name}</h2>
-                      <p className="text-lg text-gray-500 line-clamp-2">{course.desc}</p>
+                      <h2 className="font-medium text-2xl">{course?.title}</h2>
+                      <p className="text-lg text-gray-500 line-clamp-2">{course?.desc}</p>
                     </div>
                     </Link>
                   ))}

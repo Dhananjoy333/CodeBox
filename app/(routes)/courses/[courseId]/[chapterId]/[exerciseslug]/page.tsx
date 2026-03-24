@@ -76,7 +76,6 @@ function Playground() {
       chapterId:chapterId,
       exerciseId:exerciseslug
     })   
-    console.log("this is exercise data:",result.data)
     setCourseExerciseData(result.data)
     setloading(false)
   }

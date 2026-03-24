@@ -46,7 +46,12 @@ export type CompletedExercises = {
     exerciseId: number
 }
 
-function CourseList() {
+type Props={
+    smallerCard?:boolean,
+    maxLimit?:number
+}
+
+function CourseList({smallerCard = false,maxLimit=100}:Props) {
 
     const [courseList, setCourseList] = useState<Course[]>([])
     const [loading,setLoading] = useState(false)
@@ -58,17 +63,16 @@ function CourseList() {
     const GetAllCourses = async () => {
         setLoading(true)
         const result = await axios.get('/api/course')
-        console.log(result)
         setCourseList(result?.data)
         setLoading(false)
     }
 
   return (
     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-5 mt-3'>
-        {courseList.map((course,index)=>(
+        {courseList?.map((course,index)=>maxLimit && maxLimit > index && (
             <Link href={'/courses/'+course?.courseId} key={index}>
                 <div className='border-4 rounded-xl hover:bg-zinc-900 cursor-pointer'>
-                    <Image src={course?.bannerImage.trimEnd()} alt={course.title} width={400} height={400} className='w-full h-50 object-cover rounded-t-lg'/>
+                    <Image src={course?.bannerImage.trimEnd()} alt={course.title} width={400} height={400} className={`w-full ${smallerCard? 'h-30' : 'h-50'} h-50 object-cover rounded-t-lg`}/>
                     <div className='p-4'>
                         <h2 className='font-game text-2xl'>{course?.title}</h2>
                         <p className='font-game text-xl text-gray-400 line-clamp-2'>{course?.desc}</p>

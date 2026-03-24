@@ -21,7 +21,6 @@ function CourseDetail() {
     const GetCourseDetail = async() => {
       setLoading(true)
       const result = await axios.get('/api/course?courseid='+courseId)
-      console.log(result.data)
       setCourseDetail(result?.data)
       setLoading(false)
     }

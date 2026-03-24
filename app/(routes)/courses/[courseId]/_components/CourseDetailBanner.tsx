@@ -23,7 +23,6 @@ function CourseDetailBanner({loading,courseDetail,refreshData}:Props) {
     const result = await axios.post('/api/enroll-course',{
       courseId:courseDetail?.courseId  
     })
-    console.log(result)
     toast.success("Course Enrolled!")
     refreshData()
     setLoading_(false)
