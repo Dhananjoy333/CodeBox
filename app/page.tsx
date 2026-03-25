@@ -1,10 +1,11 @@
-import Header from "./_components/Header";
+import Courses from "./(routes)/courses/page";
 import Hero from "./_components/Hero";
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center">
       <Hero/>
+      <Courses/>
     </div>
   );
 }
