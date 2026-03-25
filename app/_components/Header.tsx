@@ -25,7 +25,6 @@ function Header() {
       setLoading(true)
       setError(null)
       const result = await axios.get('/api/course')
-      console.log("here is data",result.data)
       // Ensure result.data is an array
       if (Array.isArray(result.data)) {
         setCourses(result.data)

@@ -2,19 +2,14 @@
 import axios from 'axios';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import 'react-splitter-layout/lib/index.css';
 import { CompletedExercises, exercise } from '../../../_components/CourseList';
 import ContentSection from './_components/ContentSection';
-import dynamic from 'next/dynamic';
 import CodeEditor from './_components/CodeEditor';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
-
-const SplitterLayout = dynamic(
-  () => import('react-splitter-layout'),
-  { ssr: false }
-);
+import { Allotment } from "allotment";
+import "allotment/dist/style.css";
 
 export type CourseExercise={
   chapterId:number,
@@ -96,31 +91,36 @@ function Playground() {
   }
   
   return (
-    <div className='border-t-4'>
-        <SplitterLayout 
-        percentage 
-        primaryMinSize={40}
-        secondaryInitialSize={60}>
-            <div>
-              <ContentSection courseExerciseData={courseExerciseData} loading={loading}/>
-            </div>
-            <div>
-              <CodeEditor courseExerciseData={courseExerciseData} loading={loading}/>
-            </div>
-        </SplitterLayout>
-         <div className="font-game fixed bottom-0 w-full bg-zinc-900 flex p-4 justify-between items-center">
-          <Link href={prevButtonRoute??'/courses/'+courseId}>
-            <Button variant={'pixel'} className="text-xl">Previous</Button>
-          </Link>
-            <div className='flex gap-2 items-center'>
-              <Image src='/star.png' alt='star' width={40} height={40}/>
-              <h2 className='text-2xl'>You can earn <span className='text-4xl'>{exerciseInfo?.xp}</span> Xp</h2>
-            </div>
-          <Link href={nextButtonRoute??'/courses/'+courseId}>
-            <Button variant={'pixel'} className="text-xl">Next</Button>
-          </Link>
-        </div>
+    <div className="h-screen flex flex-col overflow-hidden"> 
+    
+  
+    <div className="flex-1 relative border-t-4"> 
+      <Allotment>
+        <Allotment.Pane minSize={300}>
+          <div className="h-full overflow-y-auto">
+            <ContentSection courseExerciseData={courseExerciseData} loading={loading}/>
+          </div>
+        </Allotment.Pane>
+
+        <Allotment.Pane minSize={400}>
+          <CodeEditor courseExerciseData={courseExerciseData} loading={loading}/>
+        </Allotment.Pane>
+      </Allotment>
     </div>
+    
+    <div className="h-20 shrink-0 font-game w-full bg-zinc-900 flex p-4 justify-around items-center border-t border-zinc-700 mb-20">
+      <Link href={prevButtonRoute ?? '/courses/'+courseId}>
+        <Button variant={'pixel'} className="text-xl">Previous</Button>
+      </Link>
+      <div className='flex gap-2 items-center'>
+        <Image src='/star.png' alt='star' width={40} height={40}/>
+        <h2 className='text-2xl'>You can earn <span className='text-4xl'>{exerciseInfo?.xp}</span> Xp</h2>
+      </div>
+      <Link href={nextButtonRoute ?? '/courses/'+courseId}>
+        <Button variant={'pixel'} className="text-xl">Next</Button>
+      </Link>
+    </div>
+  </div>
   )
 }
 

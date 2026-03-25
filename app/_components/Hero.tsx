@@ -27,6 +27,7 @@ function Hero() {
           alt="hero-bg"
           fill
           priority={i === 0}
+          loading={i === 0 ? "eager" : "lazy"}
           className={`object-cover transition-opacity duration-1000 ${
             i === index ? "opacity-100" : "opacity-0"
           }`}

@@ -1,4 +1,5 @@
 import { Skeleton } from "@/components/ui/skeleton"
+
 import { CourseExercise } from "../page"
 import { Lightbulb } from "lucide-react"
 

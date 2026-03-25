@@ -50,7 +50,6 @@ function CourseDetailBanner({loading,courseDetail,refreshData}:Props) {
       return
     }
     // Add navigation to continue learning
-    // You can redirect to the first uncompleted exercise or chapter
     if (courseDetail?.chapters && courseDetail.chapters.length > 0) {
       router.push(`/courses/${courseDetail.courseId}/${courseDetail.chapters[0].chapterId}/start`)
     }
