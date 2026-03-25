@@ -6,158 +6,158 @@ const DATA =
 [
   {
     "id": 1,
-    "name": "Introduction to React",
-    "desc": "Understand what React is, why it's used, and how it powers modern web apps.",
+    "name": "Introduction to Python",
+    "desc": "Get started with Python, understand why it's popular, and set up your development environment.",
     "exercises": [
-      {"name": "What is React?", "slug": "what-is-react", "xp": 20, "difficulty": "easy"},
-      {"name": "Setup React App", "slug": "setup-react-app", "xp": 25, "difficulty": "easy"},
-      {"name": "Explore Project Structure", "slug": "explore-project-structure", "xp": 15, "difficulty": "easy"},
-      {"name": "First React Render", "slug": "first-react-render", "xp": 20, "difficulty": "easy"},
-      {"name": "JSX Preview", "slug": "jsx-preview", "xp": 20, "difficulty": "easy"},
-      {"name": "React DevTools Intro", "slug": "react-devtools-intro", "xp": 25, "difficulty": "easy"}
+      {"name": "What is Python?", "slug": "what-is-python", "xp": 20, "difficulty": "easy"},
+      {"name": "Installing Python", "slug": "installing-python", "xp": 25, "difficulty": "easy"},
+      {"name": "First Python Program", "slug": "first-python-program", "xp": 20, "difficulty": "easy"},
+      {"name": "Python as a Calculator", "slug": "python-calculator", "xp": 15, "difficulty": "easy"},
+      {"name": "Comments in Python", "slug": "comments-python", "xp": 15, "difficulty": "easy"},
+      {"name": "Print Function Deep Dive", "slug": "print-function", "xp": 25, "difficulty": "easy"}
     ]
   },
   {
     "id": 2,
-    "name": "JSX Basics",
-    "desc": "Learn how JSX allows you to write HTML-like syntax inside JavaScript.",
+    "name": "Variables & Data Types",
+    "desc": "Learn how to store and manage different types of data in Python.",
     "exercises": [
-      {"name": "Write Your First JSX", "slug": "write-first-jsx", "xp": 35, "difficulty": "medium"},
-      {"name": "JSX Rules Fix", "slug": "jsx-rules-fix", "xp": 30, "difficulty": "easy"},
-      {"name": "Embed Expressions", "slug": "embed-expressions", "xp": 20, "difficulty": "easy"},
-      {"name": "Class vs className", "slug": "class-vs-classname", "xp": 10, "difficulty": "easy"},
-      {"name": "JSX Fragment Use", "slug": "jsx-fragment-use", "xp": 20, "difficulty": "easy"},
-      {"name": "JSX Challenge", "slug": "jsx-challenge", "xp": 15, "difficulty": "easy"}
+      {"name": "Variables Basics", "slug": "variables-basics", "xp": 20, "difficulty": "easy"},
+      {"name": "Numbers & Math Operations", "slug": "numbers-math", "xp": 25, "difficulty": "easy"},
+      {"name": "Strings Basics", "slug": "strings-basics", "xp": 30, "difficulty": "easy"},
+      {"name": "String Methods", "slug": "string-methods", "xp": 35, "difficulty": "medium"},
+      {"name": "Boolean Values", "slug": "boolean-values", "xp": 20, "difficulty": "easy"},
+      {"name": "Type Conversion", "slug": "type-conversion", "xp": 30, "difficulty": "easy"}
     ]
   },
   {
     "id": 3,
-    "name": "Components",
-    "desc": "Break UI into reusable pieces using functional components.",
+    "name": "Input & Output",
+    "desc": "Make interactive programs that can accept user input and display formatted output.",
     "exercises": [
-      {"name": "Create First Component", "slug": "create-first-component", "xp": 20, "difficulty": "easy"},
-      {"name": "Component Reuse", "slug": "component-reuse", "xp": 30, "difficulty": "medium"},
-      {"name": "Nested Components", "slug": "nested-components", "xp": 15, "difficulty": "easy"},
-      {"name": "Component Naming", "slug": "component-naming", "xp": 20, "difficulty": "easy"},
-      {"name": "Split UI into Components", "slug": "split-ui-components", "xp": 25, "difficulty": "easy"},
-      {"name": "Mini Project UI", "slug": "mini-project-ui", "xp": 25, "difficulty": "easy"}
+      {"name": "Input Function", "slug": "input-function", "xp": 25, "difficulty": "easy"},
+      {"name": "String Formatting", "slug": "string-formatting", "xp": 30, "difficulty": "easy"},
+      {"name": "F-Strings", "slug": "f-strings", "xp": 35, "difficulty": "easy"},
+      {"name": "Multiple Inputs", "slug": "multiple-inputs", "xp": 25, "difficulty": "easy"},
+      {"name": "Escape Sequences", "slug": "escape-sequences", "xp": 20, "difficulty": "easy"},
+      {"name": "Formatted Output Challenge", "slug": "formatted-output-challenge", "xp": 40, "difficulty": "medium"}
     ]
   },
   {
     "id": 4,
-    "name": "Props",
-    "desc": "Pass data between components using props.",
+    "name": "Control Flow",
+    "desc": "Control the flow of your program using conditional statements.",
     "exercises": [
-      {"name": "Pass Your First Props", "slug": "pass-first-props", "xp": 30, "difficulty": "easy"},
-      {"name": "Dynamic Props", "slug": "dynamic-props", "xp": 20, "difficulty": "easy"},
-      {"name": "Props Destructuring", "slug": "props-destructuring", "xp": 30, "difficulty": "medium"},
-      {"name": "Default Props", "slug": "default-props", "xp": 15, "difficulty": "easy"},
-      {"name": "Props Validation Idea", "slug": "props-validation-idea", "xp": 25, "difficulty": "easy"},
-      {"name": "Component Customization", "slug": "component-customization", "xp": 30, "difficulty": "medium"}
+      {"name": "If Statement", "slug": "if-statement", "xp": 25, "difficulty": "easy"},
+      {"name": "If-Else Statement", "slug": "if-else", "xp": 30, "difficulty": "easy"},
+      {"name": "Elif Chains", "slug": "elif-chains", "xp": 35, "difficulty": "easy"},
+      {"name": "Nested Conditions", "slug": "nested-conditions", "xp": 30, "difficulty": "medium"},
+      {"name": "Comparison Operators", "slug": "comparison-operators", "xp": 20, "difficulty": "easy"},
+      {"name": "Logical Operators", "slug": "logical-operators", "xp": 35, "difficulty": "medium"}
     ]
   },
   {
     "id": 5,
-    "name": "State",
-    "desc": "Manage dynamic data inside components using useState.",
+    "name": "Loops",
+    "desc": "Automate repetitive tasks using while and for loops.",
     "exercises": [
-      {"name": "Intro to useState", "slug": "intro-usestate", "xp": 20, "difficulty": "easy"},
-      {"name": "Counter App", "slug": "counter-app", "xp": 25, "difficulty": "easy"},
-      {"name": "Toggle State", "slug": "toggle-state", "xp": 40, "difficulty": "medium"},
-      {"name": "Form Input State", "slug": "form-input-state", "xp": 20, "difficulty": "easy"},
-      {"name": "Multiple States", "slug": "multiple-states", "xp": 20, "difficulty": "easy"},
-      {"name": "State Challenge", "slug": "state-challenge", "xp": 25, "difficulty": "medium"}
+      {"name": "While Loop Basics", "slug": "while-loop", "xp": 30, "difficulty": "easy"},
+      {"name": "For Loop with Range", "slug": "for-loop-range", "xp": 30, "difficulty": "easy"},
+      {"name": "Looping Through Strings", "slug": "loop-strings", "xp": 25, "difficulty": "easy"},
+      {"name": "Break Statement", "slug": "break-statement", "xp": 20, "difficulty": "easy"},
+      {"name": "Continue Statement", "slug": "continue-statement", "xp": 20, "difficulty": "easy"},
+      {"name": "Nested Loops", "slug": "nested-loops", "xp": 40, "difficulty": "medium"}
     ]
   },
   {
     "id": 6,
-    "name": "Event Handling",
-    "desc": "Handle user interactions like clicks, inputs, and submissions.",
+    "name": "Lists & Tuples",
+    "desc": "Store collections of data using Python's versatile list and tuple structures.",
     "exercises": [
-      {"name": "Handle Click Event", "slug": "handle-click-event", "xp": 20, "difficulty": "easy"},
-      {"name": "Input Change Event", "slug": "input-change-event", "xp": 15, "difficulty": "easy"},
-      {"name": "Form Submit", "slug": "form-submit", "xp": 35, "difficulty": "medium"},
-      {"name": "Prevent Default", "slug": "prevent-default", "xp": 20, "difficulty": "easy"},
-      {"name": "Pass Arguments", "slug": "pass-arguments", "xp": 25, "difficulty": "medium"},
-      {"name": "Event Practice", "slug": "event-practice", "xp": 15, "difficulty": "easy"}
+      {"name": "Creating Lists", "slug": "creating-lists", "xp": 20, "difficulty": "easy"},
+      {"name": "List Indexing", "slug": "list-indexing", "xp": 25, "difficulty": "easy"},
+      {"name": "List Methods", "slug": "list-methods", "xp": 35, "difficulty": "medium"},
+      {"name": "List Slicing", "slug": "list-slicing", "xp": 30, "difficulty": "easy"},
+      {"name": "Tuples Basics", "slug": "tuples-basics", "xp": 25, "difficulty": "easy"},
+      {"name": "List Comprehension", "slug": "list-comprehension", "xp": 40, "difficulty": "medium"}
     ]
   },
   {
     "id": 7,
-    "name": "Conditional Rendering",
-    "desc": "Render UI based on conditions using JS logic.",
+    "name": "Dictionaries & Sets",
+    "desc": "Work with key-value pairs and unique collections for efficient data management.",
     "exercises": [
-      {"name": "if-else Rendering", "slug": "if-else-rendering", "xp": 20, "difficulty": "easy"},
-      {"name": "Ternary Operator UI", "slug": "ternary-ui", "xp": 20, "difficulty": "easy"},
-      {"name": "&& Rendering Trick", "slug": "and-rendering", "xp": 35, "difficulty": "medium"},
-      {"name": "Login/Logout UI", "slug": "login-logout-ui", "xp": 25, "difficulty": "easy"},
-      {"name": "Conditional Component", "slug": "conditional-component", "xp": 20, "difficulty": "easy"},
-      {"name": "Challenge UI Switch", "slug": "challenge-ui-switch", "xp": 35, "difficulty": "medium"}
+      {"name": "Creating Dictionaries", "slug": "creating-dictionaries", "xp": 25, "difficulty": "easy"},
+      {"name": "Accessing Dictionary Values", "slug": "dict-access", "xp": 25, "difficulty": "easy"},
+      {"name": "Dictionary Methods", "slug": "dict-methods", "xp": 35, "difficulty": "medium"},
+      {"name": "Looping Through Dictionaries", "slug": "loop-dictionaries", "xp": 30, "difficulty": "easy"},
+      {"name": "Sets Basics", "slug": "sets-basics", "xp": 25, "difficulty": "easy"},
+      {"name": "Set Operations", "slug": "set-operations", "xp": 35, "difficulty": "medium"}
     ]
   },
   {
     "id": 8,
-    "name": "Lists & Keys",
-    "desc": "Render lists dynamically using map and unique keys.",
+    "name": "Functions",
+    "desc": "Write reusable code blocks with functions to make your programs modular.",
     "exercises": [
-      {"name": "Map Function Basics", "slug": "map-function-basics", "xp": 30, "difficulty": "medium"},
-      {"name": "Render List UI", "slug": "render-list-ui", "xp": 20, "difficulty": "easy"},
-      {"name": "Add Keys", "slug": "add-keys", "xp": 35, "difficulty": "medium"},
-      {"name": "Dynamic List", "slug": "dynamic-list", "xp": 25, "difficulty": "easy"},
-      {"name": "List Filtering", "slug": "list-filtering", "xp": 20, "difficulty": "easy"},
-      {"name": "List Challenge", "slug": "list-challenge", "xp": 30, "difficulty": "medium"}
+      {"name": "Defining Functions", "slug": "defining-functions", "xp": 25, "difficulty": "easy"},
+      {"name": "Function Parameters", "slug": "function-parameters", "xp": 30, "difficulty": "easy"},
+      {"name": "Return Values", "slug": "return-values", "xp": 30, "difficulty": "easy"},
+      {"name": "Default Parameters", "slug": "default-parameters", "xp": 25, "difficulty": "easy"},
+      {"name": "Keyword Arguments", "slug": "keyword-arguments", "xp": 30, "difficulty": "medium"},
+      {"name": "Variable Scope", "slug": "variable-scope", "xp": 35, "difficulty": "medium"}
     ]
   },
   {
     "id": 9,
-    "name": "Forms in React",
-    "desc": "Handle controlled inputs and form state.",
+    "name": "Error Handling",
+    "desc": "Handle errors gracefully and make your programs robust.",
     "exercises": [
-      {"name": "Controlled Input", "slug": "controlled-input", "xp": 40, "difficulty": "medium"},
-      {"name": "Multiple Inputs", "slug": "multiple-inputs", "xp": 45, "difficulty": "medium"},
-      {"name": "Checkbox Handling", "slug": "checkbox-handling", "xp": 15, "difficulty": "easy"},
-      {"name": "Radio Buttons", "slug": "radio-buttons", "xp": 20, "difficulty": "easy"},
-      {"name": "Form Validation", "slug": "form-validation", "xp": 25, "difficulty": "easy"},
-      {"name": "Form Project", "slug": "form-project", "xp": 30, "difficulty": "medium"}
+      {"name": "Syntax vs Runtime Errors", "slug": "error-types", "xp": 20, "difficulty": "easy"},
+      {"name": "Try-Except Block", "slug": "try-except", "xp": 35, "difficulty": "easy"},
+      {"name": "Handling Specific Exceptions", "slug": "specific-exceptions", "xp": 30, "difficulty": "easy"},
+      {"name": "Else & Finally Clauses", "slug": "else-finally", "xp": 30, "difficulty": "medium"},
+      {"name": "Raising Exceptions", "slug": "raising-exceptions", "xp": 25, "difficulty": "easy"},
+      {"name": "Input Validation", "slug": "input-validation", "xp": 35, "difficulty": "medium"}
     ]
   },
   {
     "id": 10,
-    "name": "useEffect Hook",
-    "desc": "Handle side effects like API calls and lifecycle events.",
+    "name": "File Handling",
+    "desc": "Read from and write to files for persistent data storage.",
     "exercises": [
-      {"name": "Intro to useEffect", "slug": "intro-useeffect", "xp": 35, "difficulty": "medium"},
-      {"name": "Run on Mount", "slug": "run-on-mount", "xp": 40, "difficulty": "medium"},
-      {"name": "Dependency Array", "slug": "dependency-array", "xp": 25, "difficulty": "easy"},
-      {"name": "Fetch API Data", "slug": "fetch-api-data", "xp": 35, "difficulty": "medium"},
-      {"name": "Cleanup Function", "slug": "cleanup-function", "xp": 25, "difficulty": "easy"},
-      {"name": "Effect Challenge", "slug": "effect-challenge", "xp": 40, "difficulty": "medium"}
+      {"name": "Opening Files", "slug": "opening-files", "xp": 25, "difficulty": "easy"},
+      {"name": "Reading Files", "slug": "reading-files", "xp": 30, "difficulty": "easy"},
+      {"name": "Writing to Files", "slug": "writing-files", "xp": 30, "difficulty": "easy"},
+      {"name": "Appending to Files", "slug": "appending-files", "xp": 25, "difficulty": "easy"},
+      {"name": "With Statement", "slug": "with-statement", "xp": 35, "difficulty": "medium"},
+      {"name": "CSV File Handling", "slug": "csv-handling", "xp": 40, "difficulty": "medium"}
     ]
   },
   {
     "id": 11,
-    "name": "Styling in React",
-    "desc": "Style components using CSS, inline styles, and libraries.",
+    "name": "Modules & Packages",
+    "desc": "Organize code using modules and leverage Python's extensive standard library.",
     "exercises": [
-      {"name": "CSS Import", "slug": "css-import", "xp": 25, "difficulty": "easy"},
-      {"name": "Inline Styling", "slug": "inline-styling", "xp": 30, "difficulty": "medium"},
-      {"name": "Conditional Styles", "slug": "conditional-styles", "xp": 20, "difficulty": "easy"},
-      {"name": "CSS Modules", "slug": "css-modules", "xp": 40, "difficulty": "medium"},
-      {"name": "Tailwind Setup", "slug": "tailwind-setup", "xp": 20, "difficulty": "easy"},
-      {"name": "Styled UI Challenge", "slug": "styled-ui-challenge", "xp": 25, "difficulty": "easy"}
+      {"name": "Importing Modules", "slug": "importing-modules", "xp": 25, "difficulty": "easy"},
+      {"name": "Math Module", "slug": "math-module", "xp": 30, "difficulty": "easy"},
+      {"name": "Random Module", "slug": "random-module", "xp": 35, "difficulty": "easy"},
+      {"name": "Datetime Module", "slug": "datetime-module", "xp": 30, "difficulty": "easy"},
+      {"name": "Creating Custom Modules", "slug": "custom-modules", "xp": 35, "difficulty": "medium"},
+      {"name": "Pip & External Packages", "slug": "pip-packages", "xp": 30, "difficulty": "easy"}
     ]
   },
   {
     "id": 12,
-    "name": "React Best Practices",
-    "desc": "Write clean, scalable, and maintainable React code.",
+    "name": "Mini Projects",
+    "desc": "Apply everything you've learned by building fun and practical Python projects.",
     "exercises": [
-      {"name": "Folder Structure", "slug": "folder-structure", "xp": 20, "difficulty": "easy"},
-      {"name": "Component Reusability", "slug": "component-reusability", "xp": 35, "difficulty": "medium"},
-      {"name": "Avoid Props Drilling", "slug": "avoid-props-drilling", "xp": 20, "difficulty": "easy"},
-      {"name": "Custom Hooks Intro", "slug": "custom-hooks-intro", "xp": 25, "difficulty": "easy"},
-      {"name": "Performance Basics", "slug": "performance-basics", "xp": 20, "difficulty": "easy"},
-      {"name": "Final Mini Project", "slug": "final-mini-project", "xp": 40, "difficulty": "medium"}
+      {"name": "Number Guessing Game", "slug": "guessing-game", "xp": 35, "difficulty": "easy"},
+      {"name": "Simple Calculator", "slug": "simple-calculator", "xp": 30, "difficulty": "easy"},
+      {"name": "To-Do List App", "slug": "todo-list", "xp": 40, "difficulty": "medium"},
+      {"name": "Rock Paper Scissors", "slug": "rock-paper-scissors", "xp": 35, "difficulty": "easy"},
+      {"name": "Password Generator", "slug": "password-generator", "xp": 40, "difficulty": "medium"},
+      {"name": "Final Project: Quiz App", "slug": "quiz-app", "xp": 50, "difficulty": "hard"}
     ]
   }
 ]
@@ -166,7 +166,7 @@ const DATA =
 export async function GET(req: NextRequest) {
     DATA.forEach(async (item) => {
         await db.insert(CourseChaptersTable).values({
-            courseId: 1, //Change Course ID depends on course info,
+            courseId: 4, //Change Course ID depends on course info,
             desc: item?.desc,
             exercises: item.exercises,
             name: item?.name,
